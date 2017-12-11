@@ -1,0 +1,8 @@
+{
+  "name": "bucketlist-node",
+  "version": "1.0.0",
+  "main": "app.js",
+  "repository": "https://github.com/Alweezy/bucketlist-node.git",
+  "author": "Alweezy <alvinmutisya@gmail.com>",
+  "license": "MIT"
+}
