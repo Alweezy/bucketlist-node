@@ -3,6 +3,9 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const mongoose = require('mongoose');
+// connect mongoose to database
+const config = require('./config/database');
+mongoose.connect(config.database)
 
 
 //initialize app variable
