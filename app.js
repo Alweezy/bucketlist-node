@@ -22,3 +22,12 @@ app.use(bodyParser.json());
 // instruct the server to look for static files in the public folder.
 
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.get('/', (req, res) => {
+    res.send('Invalid page');
+})
+
+// listen to port 3000
+app.listen(port, () => {
+    console.log(`Starting the server at port ${port}`);
+})
