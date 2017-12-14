@@ -5,6 +5,8 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 // connect mongoose to database
 const config = require('./config/database');
+const bucketlist = require('./controllers/bucketlist');
+
 mongoose.connect(config.database)
 
 
@@ -29,6 +31,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', (req, res) => {
     res.send('Invalid page');
 })
+
+app.use('/bucketlist', bucketlist);
 
 // listen to port 3000
 app.listen(port, () => {
