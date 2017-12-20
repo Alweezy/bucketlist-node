@@ -37,4 +37,4 @@ app.use('/bucketlist', bucketlist);
 // listen to port 3000
 app.listen(port, () => {
     console.log(`Starting the server at port ${port}`);
-})
+});
